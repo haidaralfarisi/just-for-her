@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#351e2b" />
+    <title>Undangan Dinner Spesial Kita ♡</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body class="locked">
+    <!-- HALAMAN 1: AMPLOP -->
+    <section id="envelopeScreen" class="envelope-screen">
+      <div class="envelope-intro">
+        <span class="eyebrow">ADA SESUATU BUAT KAMU</span>
+        <h1>Ada Undangan <em>Buat kamu sayangg.</em></h1>
+        <p>
+          Mungkin ini cuma hal sederhana yang Aku udah siapin ini dari jauh-jauh hari, khusus
+          buat kamu.<br />
+          Semoga kejutan kecil ini bisa bikin kamu senyum, ya. ♡
+        </p>
+      </div>
+
+      <button
+        id="envelopeButton"
+        class="envelope-button"
+        aria-label="Buka undanganmu"
+      >
+        <div class="envelope">
+          <div class="letter">
+            <span>Untuk <span data-name>Sayang</span>,</span>
+            <strong>Kamu orang yang aku sayang bangat ♡</strong>
+          </div>
+
+          <div class="envelope-back"></div>
+          <div class="envelope-flap"></div>
+          <div class="envelope-front"></div>
+          <div class="wax-seal">♡</div>
+        </div>
+      </button>
+
+      <p class="envelope-address">
+        Untuk: <span data-name>Hilda Fardania Putri</span> ♡
+      </p>
+
+      <button id="openButton" class="primary-btn">Ayo Buka Suratnya Sayanggg ♡</button>
+    </section>
+
+    <!-- HALAMAN 2: UNDANGAN -->
+    <main id="invitation" class="invitation" hidden>
+      <!-- PEMBUKA -->
+      <section class="hero section">
+        <div class="hero-glow"></div>
+
+        <div class="hero-content reveal">
+          <span class="eyebrow">MALAM SPESIAL UNTUK KITA BERDUA</span>
+
+          <div class="heart-decoration">♡</div>
+
+          <h1>Dinner<br /><em>Sama kesayangan akuu.</em></h1>
+
+          <p class="hero-description">
+            Karena setiap kisah cinta punya momen indah yang pantas dirayakan.
+          </p>
+
+          <p class="hero-personal">
+            Hai, <span data-name>Sayang</span> ♡<br />
+            Aku sudah nyiapin sesuatu yang spesial buat kita.
+          </p>
+
+          <span class="hero-down">↓</span>
+        </div>
+      </section>
+
+      <!-- SURAT CINTA -->
+      <section class="message-section section">
+        <div class="section-inner reveal">
+          <span class="eyebrow">SEDIKIT PESAN DARI HATI</span>
+
+          <h2>
+            Momen Favoritku<br />
+            Selalu <em>Sama kamu tau sayang.</em>
+          </h2>
+
+          <div class="small-divider">♡</div>
+
+          <p>
+            Dari sekian banyak hal yang terjadi dalam hidupku, mengenal dan
+            memiliki cerita bersamamu adalah salah satu hal yang paling aku
+            syukuri.
+          </p>
+
+          <p>
+            Aku selalu menyukai hal-hal sederhana tentang kita. Tawa kecil,
+            cerita random, candaan yang mungkin tidak penting bagi orang lain,
+            sampai momen-momen sederhana yang ternyata begitu berarti buat aku.
+          </p>
+
+          <p>
+            Aku tahu perjalanan kita tidak selalu mudah. Ada hari-hari yang
+            menyenangkan, ada juga hari-hari ketika kita belum sepenuhnya saling
+            memahami. Tapi, aku tetap menghargai setiap bagian dari cerita ini
+            dan masih menyimpan banyak harapan baik untuk kita.
+          </p>
+
+          <p>
+            Di anniversary kali ini, aku ingin kita menikmati satu malam yang
+            spesial. Tanpa perlu menjadi sempurna, tanpa harus memaksakan apa
+            pun. Cukup menjadi diri sendiri, menikmati waktu bersama, dan
+            menciptakan satu lagi kenangan indah untuk disimpan.
+          </p>
+
+          <span class="signature">
+            Dengan penuh cinta, dari aku untuk kamu ♡
+          </span>
+        </div>
+      </section>
+
+      <!-- DETAIL MAKAN MALAM -->
+      <section class="details-section section">
+        <div class="section-inner">
+          <div class="reveal">
+            <span class="eyebrow">UNDANGAN KHUSUS UNTUKMU</span>
+
+            <h2>Malam <em>Spesial Kita</em></h2>
+
+            <p class="section-subtitle">
+              Aku ingin merayakan hari istimewa kita dengan makan malam romantis
+              berdua.
+            </p>
+          </div>
+
+          <div class="detail-grid">
+            <article class="detail-card reveal">
+              <span class="detail-icon">♡</span>
+              <span class="detail-label">HARI & TANGGAL</span>
+              <h3 id="dinnerDate">Sabtu, 12 Desember 2026</h3>
+            </article>
+
+            <article class="detail-card reveal">
+              <span class="detail-icon">◷</span>
+              <span class="detail-label">PUKUL</span>
+              <h3 id="dinnerTime">19.00 WIB</h3>
+            </article>
+
+            <article class="detail-card reveal">
+              <span class="detail-icon">⌖</span>
+              <span class="detail-label">TEMPAT</span>
+              <h3 id="dinnerPlace">Restoran Favorit Kita</h3>
+              <p id="dinnerAddress">Alamat restoran</p>
+
+              <a
+                id="mapsLink"
+                class="text-link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Lihat Lokasi ↗
+              </a>
+            </article>
+
+            <article class="detail-card reveal">
+              <span class="detail-icon">✧</span>
+              <span class="detail-label">PAKAIAN</span>
+              <h3 id="dressCode">Pakai yang bikin kamu nyaman ♡</h3>
+            </article>
+          </div>
+
+          <!-- COUNTDOWN -->
+          <div class="countdown-wrapper reveal">
+            <span class="eyebrow"> MENGHITUNG HARI MENUJU DINNER KITA </span>
+
+            <div class="countdown">
+              <div><strong id="days">00</strong><span>HARI</span></div>
+              <div><strong id="hours">00</strong><span>JAM</span></div>
+              <div><strong id="minutes">00</strong><span>MENIT</span></div>
+              <div><strong id="seconds">00</strong><span>DETIK</span></div>
+            </div>
+
+            <p id="countdownMessage"></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- GALERI FOTO -->
+      <section class="gallery-section section">
+        <div class="section-inner">
+          <div class="reveal">
+            <span class="eyebrow">KENANGAN KECIL KITA</span>
+
+            <h2>
+              Cerita Kita<br />
+              <em>Dalam Foto.</em>
+            </h2>
+
+            <p class="section-subtitle">
+              Beberapa momen sederhana yang selalu ingin aku ingat.
+            </p>
+          </div>
+
+          <div class="gallery">
+            <figure class="polaroid reveal">
+              <div class="photo-frame">
+                <img
+                  src="assets/image/1.PNG"
+                  alt="Kenangan pertama kita"
+                  loading="lazy"
+                />
+              </div>
+              <figcaption>Awal cerita kita kamu nerima aku ♡</figcaption>
+            </figure>
+
+            <figure class="polaroid reveal">
+              <div class="photo-frame">
+                <img
+                  src="assets/image/1.jpg"
+                  alt="Momen spesial bersama"
+                  loading="lazy"
+                />
+              </div>
+              <figcaption>Momen favoritku bersamamu</figcaption>
+            </figure>
+
+            <figure class="polaroid reveal">
+              <div class="photo-frame">
+                <img
+                  src="assets/image/2.png"
+                  alt="Kenangan indah kita"
+                  loading="lazy"
+                />
+              </div>
+              <figcaption>Untuk lebih banyak cerita ♡</figcaption>
+            </figure>
+          </div>
+
+          <p class="gallery-quote reveal">
+            "Kalau harus memperbaiki berkali kalipun sama kamu, aku akan memilih itu daripada harus dengan yg lain ."
+          </p>
+        </div>
+      </section>
+
+      <!-- PERTANYAAN TERAKHIR -->
+      <section id="rsvpSection" class="rsvp-section section">
+        <div class="section-inner reveal">
+          <span class="eyebrow">SATU PERTANYAAN TERAKHIR</span>
+
+          <div class="heart-decoration">♡</div>
+
+          <h2>
+            Mau Terima<br />
+            <em>Undangan Aku?</em>
+          </h2>
+
+          <p>
+            Jadi, gimana sayang?<br />
+            Mau menghabiskan malam spesial ini sama aku?
+          </p>
+
+          <div class="rsvp-buttons" id="rsvpButtons">
+            <button id="yesButton" class="primary-btn">Mau Banget! ♡</button>
+
+            <button id="noButton" class="secondary-btn">Tidak 🙈</button>
+          </div>
+
+          <p id="noMessage" class="no-message" aria-live="polite"></p>
+        </div>
+      </section>
+
+      <footer>Dibuat khusus buat kamu sayang ♡</footer>
+    </main>
+
+    <!-- PETUNJUK SCROLL -->
+    <div id="scrollHint" class="scroll-hint" hidden>
+      <span>Scroll terus ya, sayang</span>
+      <span class="scroll-arrow">↓</span>
+    </div>
+
+    <!-- HALAMAN 3: PENUTUP -->
+    <section id="successScreen" class="success-screen" hidden>
+      <div id="heartContainer" class="heart-container"></div>
+
+      <div class="success-content">
+        <span class="eyebrow">YEAY, KAMU MAU! ♡</span>
+
+        <div class="success-heart">♡</div>
+
+        <h1>Yeay! <em>Kita Jadi Dinner!</em></h1>
+
+        <p>Kamu baru saja bikin aku jadi orang paling bahagia hari ini.</p>
+
+        <h2>
+          Sampai Ketemu<br />
+          <em>& HAPPY ANNIVERSARY YANG KE 1 TAHUN SAYANG ♡</em>
+        </h2>
+
+        <p id="successDate"></p>
+
+        <button id="backButton" class="secondary-btn">
+          Lihat Undangannya Lagi
+        </button>
+      </div>
+    </section>
+  </body>
+</html>
